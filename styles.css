@@ -1,14 +1,47 @@
-@media {
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#welcome-section {
+body {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
     height: 100vh;
-}
+    overflow: hidden;
+  }
 
-header {
+  header {
     width: 100%;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
+
+main {
+    scroll-snap-type: y mandatory;
+    height: calc(100vh - 120px);
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.snap-section {
+    scroll-snap-align: start;
+    height: 100%;
+}
+
+h1, h2 {
+    font-weight: 700;
+  }
+  
+  nav {
+      font-weight: 500;
+    }
+
+/* @media {
+
+} */
